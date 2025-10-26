@@ -82,7 +82,7 @@ author:
   name             : "Katumbi Georges"
   avatar           : "/assets/images/avatar2.JPG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Global and Regional Ocean Modeling, Machine Learning, Mesoscale Eddy Parameterizations, Scientific Software Development, Adjoint Modeling, Data Assimilation, Uncertainty Quantification"
-  location         : "Boulder, Colorado"
+  location         : "Kigali, Rwanda"
   email            : "katumbigeorges@example.com"
   uri              :
   bitbucket        :
@@ -97,7 +97,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : "katumbi-georges"
+  linkedin         : "katumbigeorges"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
