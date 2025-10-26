@@ -1,4 +1,4 @@
-# Nora Loose's website
+# Katumbi Georges's website
 
 ## Credits
 
