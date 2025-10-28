@@ -18,29 +18,6 @@ Here are some of my notable projects and contributions:
 
 ---
 
-### Automatic Timetable Generator
-
-<!-- <figure style="width: 100%" class="align-center">
-  <img src="/assets/images/projects/timetable-generator.jpg" alt="Timetable Generator Interface">
-  <figcaption>Intelligent scheduling system with conflict resolution</figcaption>
-</figure> -->
-
-**Technology Stack:** JavaScript, Algorithm Design
-
-- Created an intelligent timetable generation system for educational institutions
-- Implemented constraint-based scheduling algorithms
-- Features include conflict detection, resource optimization, and automated scheduling
-
-**Technical Achievements:**
-- ⚡ Optimized constraint satisfaction algorithms
-- 🔄 Automatic conflict resolution
-- 📅 Resource allocation optimization
-- 🎯 Customizable scheduling rules
-
-[Source Code](https://github.com/Katumbigeorges){: .btn .btn--info}
-
----
-
 ### Age and Gender Detection Using Deep Learning
 
 <!-- <figure style="width: 100%" class="align-center">
@@ -88,6 +65,29 @@ Here are some of my notable projects and contributions:
 - ⚙️ **Automated Build** - Three-phase build process with Vagrant integration for easy setup
 
 [Source Code](https://github.com/Katumbigeorges/Linux-From-Scratch){: .btn .btn--info}
+
+---
+
+### Automatic Timetable Generator
+
+<!-- <figure style="width: 100%" class="align-center">
+  <img src="/assets/images/projects/timetable-generator.jpg" alt="Timetable Generator Interface">
+  <figcaption>Intelligent scheduling system with conflict resolution</figcaption>
+</figure> -->
+
+**Technology Stack:** JavaScript, Algorithm Design
+
+- Created an intelligent timetable generation system for educational institutions
+- Implemented constraint-based scheduling algorithms
+- Features include conflict detection, resource optimization, and automated scheduling
+
+**Technical Achievements:**
+- ⚡ Optimized constraint satisfaction algorithms
+- 🔄 Automatic conflict resolution
+- 📅 Resource allocation optimization
+- 🎯 Customizable scheduling rules
+
+[Source Code](https://github.com/Katumbigeorges){: .btn .btn--info}
 
 ---
 
