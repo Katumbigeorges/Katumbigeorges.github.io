@@ -6,7 +6,7 @@ permalink: /
 author_profile: true
 ---
 
-<img src="/assets/images/Nora.JPG" width="340px" alt="Katumbi Georges" align="right" style="margin-left: 40px; margin-bottom: 10px;" />
+<img src="/assets/images/Georges.JPG" width="340px" alt="Katumbi Georges" align="right" style="margin-left: 40px; margin-bottom: 10px;" />
 
 # About
 

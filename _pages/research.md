@@ -10,7 +10,33 @@ toc_icon: "gear"
 toc_sticky: true
 ---
 
-My research lies at the intersection of physical oceanography, numerical modeling, and machine learning. Current and past research projects include:
+My research spans multiple domains including cybersecurity, network monitoring, physical oceanography, numerical modeling, and machine learning. Current and past research projects include:
+
+## Current Research
+
+### Sketch-Based Telemetry for Network Monitoring
+
+**Research Intern — CyLab (Remote)**  
+*Sep 2024 – Present*  
+Carnegie Mellon University, Pittsburgh, PA  
+*Supervisors: Prof. Vyas Sekar and Milind Srivastava (PhD Candidate)*  
+*Remote from Kigali, Rwanda*
+
+I am currently working on evaluating **Circa**, a sketch-based telemetry system, for production deployment on the CyLab-Africa/Upanzi network testbed. This research focuses on reducing telemetry costs through approximation algorithms while maintaining monitoring accuracy.
+
+**Key Research Activities:**
+- **System Integration:** Integrating Circa into existing observability stack (Prometheus and Elasticsearch) on MOSIP infrastructure to validate approximation-first network monitoring approaches
+- **Experimental Design:** Designing and executing experimental protocols to benchmark sketch-based telemetry performance against traditional exact collection methods
+- **Data Analysis:** Collecting and analyzing distributed network monitoring metrics to quantify cost-accuracy tradeoffs of sketch primitives (entropy, heavy hitters, cardinality estimation)
+- **Production Development:** Contributing to development of production-ready observability solutions for large-scale distributed systems using sketch approximation algorithms
+
+This work represents a novel approach to network monitoring that balances computational efficiency with monitoring accuracy, with potential applications in large-scale distributed systems and cloud infrastructure.
+
+---
+
+## Oceanography & Climate Research
+
+My research in physical oceanography and climate modeling includes:
 - Regional coupled physical-biogeochemical modeling
 - Integrating machine learning and ocean modeling
 - Ocean mesoscale eddies and their parameterizations

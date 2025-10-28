@@ -80,7 +80,7 @@ analytics:
 # Site Author
 author:
   name             : "Katumbi Georges"
-  avatar           : "/assets/images/avatar2.JPG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/Georges.JPG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Global and Regional Ocean Modeling, Machine Learning, Mesoscale Eddy Parameterizations, Scientific Software Development, Adjoint Modeling, Data Assimilation, Uncertainty Quantification"
   location         : "Kigali, Rwanda"
   email            : "katumbigeorges@example.com"
