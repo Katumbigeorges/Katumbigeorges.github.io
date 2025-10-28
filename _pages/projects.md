@@ -39,7 +39,7 @@ Here are some of my notable projects and contributions:
 - 📊 Comprehensive admin dashboard
 - 📱 Mobile-responsive design
 
-[View Demo](#){: .btn .btn--primary} [Source Code](https://github.com/Katumbigeorges){: .btn .btn--info}
+[Source Code](https://github.com/Katumbigeorges){: .btn .btn--info}
 
 ---
 
@@ -64,7 +64,7 @@ Here are some of my notable projects and contributions:
 - 📚 Course registration and management
 - 📈 Grade tracking and reporting
 
-[View Demo](#){: .btn .btn--primary} [Source Code](https://github.com/Katumbigeorges){: .btn .btn--info}
+[Source Code](https://github.com/Katumbigeorges){: .btn .btn--info}
 
 ---
 
@@ -88,7 +88,7 @@ Here are some of my notable projects and contributions:
 - 📈 Analytics and reporting tools
 - 🗺️ Geographic data visualization
 
-[View Demo](#){: .btn .btn--primary} [Source Code](https://github.com/Katumbigeorges){: .btn .btn--info}
+[Source Code](https://github.com/Katumbigeorges){: .btn .btn--info}
 
 ---
 
@@ -111,7 +111,7 @@ Here are some of my notable projects and contributions:
 - 📅 Resource allocation optimization
 - 🎯 Customizable scheduling rules
 
-[View Demo](#){: .btn .btn--primary} [Source Code](https://github.com/Katumbigeorges){: .btn .btn--info}
+[Source Code](https://github.com/Katumbigeorges){: .btn .btn--info}
 
 ---
 
@@ -152,7 +152,7 @@ Here are some of my notable projects and contributions:
 - 📱 **Responsive UI** - Modern, mobile-friendly interface with drag-and-drop upload
 - ⚡ **Performance** - Optimized model loading and efficient processing pipeline
 
-[View Demo](#){: .btn .btn--primary} [Source Code](https://github.com/Katumbigeorges/Age-and-Gender-Detection-Using-Deep-Learning){: .btn .btn--info}
+[Source Code](https://github.com/Katumbigeorges/Age-and-Gender-Detection-Using-Deep-Learning){: .btn .btn--info}
 
 ---
 
@@ -177,32 +177,7 @@ Here are some of my notable projects and contributions:
 - 🚀 **Bootable System** - Created fully functional Linux system with GRUB bootloader
 - ⚙️ **Automated Build** - Three-phase build process with Vagrant integration for easy setup
 
-[View Demo](#){: .btn .btn--primary} [Source Code](https://github.com/Katumbigeorges/Linux-From-Scratch){: .btn .btn--info}
-
----
-
-### Security Analysis Tools
-
-<!-- <figure class="third">
-  <img src="/assets/images/projects/security-tool-1.jpg" alt="Network Scanner">
-  <img src="/assets/images/projects/security-tool-2.jpg" alt="Forensics Tool">
-  <img src="/assets/images/projects/security-tool-3.jpg" alt="Vulnerability Scanner">
-  <figcaption>Suite of security and forensics tools</figcaption>
-</figure> -->
-
-**Specializations:** Network Security, Digital Forensics, Vulnerability Assessment
-
-- Developed tools for network security analysis and vulnerability assessment
-- Created digital forensics utilities for evidence collection and analysis
-- Implemented automated security scanning and reporting systems
-
-**Tools & Capabilities:**
-- 🔍 Network vulnerability scanning
-- 🛡️ Penetration testing utilities
-- 📁 Digital evidence collection
-- 📊 Automated security reporting
-
-[Source Code](https://github.com/Katumbigeorges){: .btn .btn--info}
+[Source Code](https://github.com/Katumbigeorges/Linux-From-Scratch){: .btn .btn--info}
 
 ---
 
