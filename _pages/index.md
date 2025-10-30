@@ -10,13 +10,12 @@ author_profile: true
 
 # About
 
-I am a Master's student in Information Technology (Research Track) at Carnegie Mellon University Africa, with a strong focus on **AI Safety and Alignment** under the supervision of Prof. Prasenjit Mitra. My research interests lie at the intersection of machine learning, cybersecurity, and system architecture, with a deep commitment to developing rigorous evaluation methods and alignment techniques for autonomous systems.
+I'm a graduate student at Carnegie Mellon University Africa researching network telemetry and observability in distributed systems. I work at CMU's CyLab evaluating sketch-based monitoring solutions that make large-scale infrastructure more efficient.
 
-Currently, I work as a Research Intern at CyLab, Carnegie Mellon University, where I evaluate sketch-based telemetry systems for production deployment on network testbeds, focusing on approximation algorithms to reduce monitoring costs while maintaining accuracy. My work involves integrating novel observability solutions into large-scale distributed systems infrastructure.
+I'm passionate about understanding how systems work at the lowest level—from building a Linux distribution from scratch to deploying production monitoring systems. My goal is to make distributed systems more observable and efficient through better algorithms and OS-level optimizations.
 
-Previously, I completed my Bachelor's in Information Technology with a concentration in Networks and Communication Systems from Adventist University of Central Africa, where I served as a Teaching Assistant for Linux & Network Administration. I've also gained practical experience through virtual internships with AIG and Mastercard, focusing on cybersecurity analysis, threat intelligence, and security awareness training.
+## What I'm Working On
 
-Beyond research, I enjoy teaching and have instructed over 60 students in Computer Science at the IGCSE level. I'm passionate about making technology education accessible and am committed to contributing to AI safety research that addresses real-world challenges.
-
-I'm actively seeking research internship opportunities for Summer 2026 to advance my work in AI alignment and safety.
+### Network Telemetry Research at CMU CyLab
+I'm evaluating Circa, a sketch-based telemetry system, to reduce monitoring costs in distributed systems. This involves integrating approximation algorithms into production observability stacks and measuring the tradeoffs between accuracy and efficiency.
 
