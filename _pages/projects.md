@@ -14,7 +14,7 @@ header:
   overlay_image: /assets/images/projects-header.jpg
 ---
 
-Here are some of my notable projects and contributions:
+Here are some of my  projects:
 
 ---
 
@@ -89,12 +89,4 @@ Here are some of my notable projects and contributions:
 
 [Source Code](https://github.com/Katumbigeorges){: .btn .btn--info}
 
----
 
-## Get In Touch
-
-Interested in collaborating or learning more about my work? 
-
-[Contact Me](/contact/){: .btn .btn--primary .btn--large} [Download Resume](/assets/resume.pdf){: .btn .btn--info .btn--large}
-
----
