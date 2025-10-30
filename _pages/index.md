@@ -12,7 +12,7 @@ author_profile: true
 
 I'm a graduate student at Carnegie Mellon University Africa researching network telemetry and observability in distributed systems. I work at CMU's CyLab evaluating sketch-based monitoring solutions that make large-scale infrastructure more efficient.
 
-I'm passionate about understanding how systems work at the lowest level—from building a Linux distribution from scratch to deploying production monitoring systems. My goal is to make distributed systems more observable and efficient through better algorithms and OS-level optimizations.
+I'm passionate about understanding how systems work at the lowest level—from building a Linux distribution from scratch to deploying production monitoring systems.
 
 ## What I'm Working On
 
