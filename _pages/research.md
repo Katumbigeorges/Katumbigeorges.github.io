@@ -10,6 +10,8 @@ toc_icon: "gear"
 toc_sticky: true
 ---
 
+My research is about Networks, Operating Systems, Distributed Systems and Cybersecurity.
+
 ## What I'm Currently Working On
 
 ### Sketch-Based Telemetry for Network Monitoring
