@@ -1,0 +1,14 @@
+/* TEAM */
+Developer: Georges Katumbi (moonw4lk)
+Contact: georgeskatumbi90@gmail.com
+Location: Kigali, Rwanda
+GitHub: https://github.com/Katumbigeorges
+LinkedIn: https://www.linkedin.com/in/georgeskatumbi
+
+/* SITE */
+Stack: React, TypeScript, Vite, Tailwind CSS
+Hosting: GitHub Pages
+Last update: 2026/08
+
+/* NOTE */
+Yes, there are flags hidden on this site. Happy hunting.

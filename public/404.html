@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 — target not found</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23040506'/%3E%3Ctext x='9' y='45' font-family='monospace' font-size='32' font-weight='bold' fill='%239fef00'%3E%26gt;_%3C/text%3E%3C/svg%3E"
+    />
+    <style>
+      * { margin: 0; box-sizing: border-box; }
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #040506;
+        color: #cbd5e1;
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        padding: 1.5rem;
+      }
+      .win {
+        width: 100%;
+        max-width: 560px;
+        border: 1px solid #1c242c;
+        border-radius: 12px;
+        background: #07090bf2;
+        box-shadow: 0 0 0 1px rgba(159, 239, 0, 0.15), 0 0 60px -10px rgba(159, 239, 0, 0.35);
+        overflow: hidden;
+      }
+      .bar {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        padding: 12px 16px;
+        border-bottom: 1px solid #141a20;
+        background: #0a0d10;
+      }
+      .dot { width: 12px; height: 12px; border-radius: 50%; }
+      .bar span:last-child { margin-left: 8px; font-size: 12px; color: #64748b; }
+      pre { padding: 24px; font-size: 14px; line-height: 1.7; white-space: pre-wrap; }
+      .g { color: #9fef00; }
+      .r { color: #ff6b6b; }
+      .d { color: #64748b; }
+      a { color: #9fef00; }
+      .cursor {
+        display: inline-block; width: 9px; height: 16px;
+        background: #9fef00; vertical-align: -2px;
+        animation: blink 1.05s step-end infinite;
+      }
+      @keyframes blink { 50% { opacity: 0; } }
+    </style>
+  </head>
+  <body>
+    <main class="win">
+      <div class="bar">
+        <span class="dot" style="background: #ff5f56"></span>
+        <span class="dot" style="background: #ffbd2e"></span>
+        <span class="dot" style="background: #27c93f"></span>
+        <span>guest@moonw4lk: ~</span>
+      </div>
+      <pre><span class="g">$</span> curl -i <span id="path">this page</span>
+<span class="r">HTTP/1.1 404 Not Found</span>
+<span class="d"># the page you probed does not exist.</span>
+<span class="d"># it may have been moved, deleted — or it was a honeypot all along.</span>
+
+<span class="g">$</span> suggested next hop:
+  <a href="/">cd ~ (back to the homepage)</a>
+
+<span class="g">$</span> <span class="cursor"></span></pre>
+    </main>
+    <script>
+      document.getElementById("path").textContent = location.pathname;
+    </script>
+  </body>
+</html>

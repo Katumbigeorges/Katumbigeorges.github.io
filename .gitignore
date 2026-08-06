@@ -1,0 +1,7 @@
+node_modules/
+dist/
+# regenerated from content/writeups by the prebuild/predev scripts
+src/generated/
+.DS_Store
+*.local
+.vite/

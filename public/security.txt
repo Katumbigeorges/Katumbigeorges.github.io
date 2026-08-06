@@ -1,0 +1,7 @@
+Contact: mailto:georgeskatumbi90@gmail.com
+Expires: 2027-06-01T00:00:00.000Z
+Preferred-Languages: en, fr
+Canonical: https://katumbigeorges.github.io/.well-known/security.txt
+
+# This is a static personal site on GitHub Pages.
+# If you still found something worth reporting, I genuinely want to hear it.

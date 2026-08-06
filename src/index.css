@@ -1,0 +1,370 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── self-hosted fonts (latin subsets) ─────────────────────────────────── */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/jetbrains-mono-v24-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/jetbrains-mono-v24-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/jetbrains-mono-v24-latin-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/space-grotesk-v22-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/space-grotesk-v22-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/space-grotesk-v22-latin-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/space-grotesk-v22-latin-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/inter-v20-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/inter-v20-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/inter-v20-latin-600.woff2") format("woff2");
+}
+
+/* ── theme engine: accent color as an RGB triplet ──────────────────────
+   switched at runtime by the terminal `theme` command (data-theme attr) */
+:root {
+  color-scheme: dark;
+  --acid: 159 239 0; /* phosphor (default) */
+  --acid-soft: 198 255 90;
+}
+:root[data-theme="amber"] {
+  --acid: 255 176 0;
+  --acid-soft: 255 214 110;
+}
+:root[data-theme="ice"] {
+  --acid: 55 214 196;
+  --acid-soft: 140 240 228;
+}
+:root[data-theme="blood"] {
+  --acid: 255 92 87;
+  --acid-soft: 255 150 146;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  @apply bg-ink-950 text-slate-300 font-sans antialiased;
+  background-image:
+    radial-gradient(60rem 60rem at 80% -10%, rgb(var(--acid) / 0.06), transparent 60%),
+    radial-gradient(50rem 50rem at -10% 20%, rgba(55, 214, 196, 0.05), transparent 60%);
+  background-attachment: fixed;
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--acid));
+  outline-offset: 2px;
+}
+
+/* thin custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #07090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #1c242c;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2a3a2a;
+}
+
+::selection {
+  background: rgb(var(--acid) / 0.28);
+  color: #f2fce0;
+}
+
+@layer components {
+  /* keyboard users get a visible jump past the nav */
+  .skip-link {
+    @apply absolute left-4 top-4 z-[120] -translate-y-24 rounded-md bg-acid px-4 py-2 font-mono text-sm font-medium text-ink-950 transition-transform;
+  }
+  .skip-link:focus {
+    @apply translate-y-0;
+  }
+
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  .section-label {
+    @apply mb-3 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-acid;
+  }
+
+  .section-title {
+    @apply font-display text-3xl font-bold text-white sm:text-4xl;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-md border border-ink-600 bg-ink-850/70 px-2.5 py-1 font-mono text-xs text-slate-300 transition-colors;
+  }
+  .chip:hover {
+    @apply border-acid/50 text-acid;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-5 py-2.5 font-mono text-sm font-medium transition-all duration-200;
+  }
+  .btn-primary {
+    @apply bg-acid text-ink-950 hover:shadow-glow-lg hover:brightness-110;
+  }
+  .btn-ghost {
+    @apply border border-ink-600 text-slate-200 hover:border-acid/60 hover:text-acid;
+  }
+
+  .card {
+    @apply relative overflow-hidden rounded-xl border border-ink-600 bg-ink-900/60 p-6 backdrop-blur-sm transition-all duration-300;
+  }
+  .card:hover {
+    @apply border-acid/40 shadow-glow;
+  }
+  /* mouse-tracked spotlight (coords set by useCardSpotlight) */
+  .card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(
+      280px circle at var(--mx, 50%) var(--my, 50%),
+      rgb(var(--acid) / 0.09),
+      transparent 65%
+    );
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+  }
+  .card:hover::before {
+    opacity: 1;
+  }
+
+  /* focus-and-dim: hovering one card fades its siblings */
+  @media (hover: hover) {
+    .dim-group:hover .card:not(:hover) {
+      opacity: 0.55;
+      filter: saturate(0.75);
+    }
+  }
+
+  /* faint CRT scanlines for the terminal window */
+  .crt {
+    position: relative;
+  }
+  .crt::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.02) 0px,
+      rgba(255, 255, 255, 0.02) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  }
+
+  .terminal-body::-webkit-scrollbar {
+    width: 6px;
+  }
+  .terminal-body::-webkit-scrollbar-thumb {
+    background: #1c242c;
+    border-radius: 6px;
+  }
+
+  /* ── write-up article body ──────────────────────────────────────────
+     Styles build-time markdown output, so everything is an element
+     selector — the generated HTML carries no utility classes. */
+  .writeup-prose {
+    @apply text-[15px] leading-[1.75] text-slate-300;
+  }
+  .writeup-prose > * + * {
+    @apply mt-5;
+  }
+  .writeup-prose h2 {
+    @apply mt-12 scroll-mt-24 border-b border-ink-700 pb-2 font-display text-xl font-bold text-white;
+  }
+  .writeup-prose h3 {
+    @apply mt-9 scroll-mt-24 font-display text-base font-semibold text-white;
+  }
+  .writeup-prose h4 {
+    @apply mt-7 scroll-mt-24 font-mono text-sm font-semibold text-slate-200;
+  }
+  .writeup-prose a {
+    @apply text-acid underline decoration-acid/40 underline-offset-2 hover:decoration-acid;
+  }
+  .writeup-prose strong {
+    @apply font-semibold text-slate-100;
+  }
+  .writeup-prose ul {
+    @apply list-disc space-y-2 pl-5 marker:text-acid/50;
+  }
+  .writeup-prose ol {
+    @apply list-decimal space-y-2 pl-5 marker:text-ash;
+  }
+  .writeup-prose li > ul,
+  .writeup-prose li > ol {
+    @apply mt-2;
+  }
+  .writeup-prose blockquote {
+    @apply border-l-2 border-acid/40 pl-4 text-slate-400;
+  }
+  .writeup-prose hr {
+    @apply border-ink-700;
+  }
+  /* inline code — not inside a highlighted block */
+  .writeup-prose :not(pre) > code {
+    @apply rounded border border-ink-700 bg-ink-850 px-1.5 py-0.5 font-mono text-[0.85em] text-acid-soft;
+  }
+  .writeup-prose pre {
+    @apply overflow-x-auto rounded-lg border border-ink-700 p-4 font-mono text-[13px] leading-relaxed;
+    /* shiki sets its own background; keep ours for unhighlighted blocks */
+  }
+  .writeup-prose pre.plain {
+    @apply bg-ink-900;
+  }
+  .writeup-prose pre code {
+    @apply font-mono;
+  }
+  .writeup-prose table {
+    @apply block w-full overflow-x-auto border-collapse text-sm sm:table;
+  }
+  .writeup-prose th {
+    @apply border-b border-ink-600 px-3 py-2 text-left font-mono text-xs uppercase tracking-wider text-acid;
+  }
+  .writeup-prose td {
+    @apply border-b border-ink-700/60 px-3 py-2 align-top text-slate-400;
+  }
+  .writeup-prose img {
+    @apply h-auto max-w-full rounded-lg border border-ink-700;
+  }
+
+  /* animated grid backdrop */
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, rgb(var(--acid) / 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(var(--acid) / 0.06) 1px, transparent 1px);
+    background-size: 44px 44px;
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 18px rgb(var(--acid) / 0.55);
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+      opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .glitch {
+    animation: glitch 0.65s steps(2, end) 2;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow:
+      2px 0 rgb(var(--acid) / 0.9),
+      -2px 0 rgba(55, 214, 196, 0.9);
+    transform: translateX(0);
+  }
+  25% {
+    text-shadow:
+      -3px 0 rgb(var(--acid) / 0.9),
+      3px 0 rgba(255, 92, 87, 0.8);
+    transform: translateX(2px);
+  }
+  50% {
+    text-shadow:
+      3px 0 rgba(55, 214, 196, 0.9),
+      -3px 0 rgb(var(--acid) / 0.9);
+    transform: translateX(-2px);
+  }
+  100% {
+    text-shadow: none;
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .glitch,
+  .animate-blink,
+  .animate-fade-up {
+    animation: none !important;
+  }
+}
